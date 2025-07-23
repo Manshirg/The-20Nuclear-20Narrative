@@ -36,21 +36,24 @@ const Index = () => {
       title: "Early Scientific Enthusiasm",
       summary: "The dawn of nuclear science was marked by unbridled optimism and scientific wonder, as researchers like Marie Curie discovered radioactivity and its potential applications.",
       color: "nuclear-green",
-      icon: Atom
+      icon: Atom,
+      footnote: 1
     },
     {
-      period: "1910–1959", 
+      period: "1910–1959",
       title: "Atomic Anxiety + Cold War Secrecy",
       summary: "The atomic bomb's devastating power and Cold War tensions transformed nuclear technology from scientific marvel to existential threat, shrouded in government secrecy.",
       color: "nuclear-red",
-      icon: Zap
+      icon: Zap,
+      footnote: 2
     },
     {
       period: "1960–2016",
       title: "Protest, Distrust, and Fallout",
       summary: "Public awareness of nuclear dangers grew through accidents like Three Mile Island and Chernobyl, sparking environmental movements and widespread distrust of nuclear institutions.",
       color: "nuclear-orange",
-      icon: Users
+      icon: Users,
+      footnote: 5
     }
   ];
 
