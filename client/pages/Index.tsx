@@ -83,7 +83,7 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <blockquote className="text-lg md:text-xl leading-relaxed italic text-foreground/90 border-l-4 border-nuclear-blue/30 pl-6">
-                "The public perception of nuclear technology has undergone a dramatic transformation from initial scientific enthusiasm (1877-1909) through atomic anxiety and Cold War secrecy (1910-1959) to widespread protest and institutional distrust (1960-2016), shaped by government propaganda, media representation, and direct experiences with nuclear accidents and weapons testing."
+                "The public perception of nuclear technology has undergone a dramatic transformation from initial scientific enthusiasm (1877-1909)<Footnote number={1} citation={footnotes[0].citation} /> through atomic anxiety and Cold War secrecy (1910-1959)<Footnote number={2} citation={footnotes[1].citation} /> to widespread protest and institutional distrust (1960-2016)<Footnote number={3} citation={footnotes[2].citation} />, shaped by government propaganda, media representation, and direct experiences with nuclear accidents and weapons testing."<Footnote number={4} citation={footnotes[3].citation} />
               </blockquote>
             </CardContent>
           </Card>
