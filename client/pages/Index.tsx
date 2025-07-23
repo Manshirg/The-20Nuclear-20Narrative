@@ -31,6 +31,34 @@ const Index = () => {
     }
   ];
 
+  const references = [
+    {
+      id: 'weart-1988',
+      citation: 'Weart, Spencer R. Nuclear Fear: A History of Images. Cambridge, MA: Harvard University Press, 1988.',
+      type: 'book' as const
+    },
+    {
+      id: 'boyer-1985',
+      citation: 'Boyer, Paul. By the Bomb\'s Early Light: American Thought and Culture at the Dawn of the Atomic Age. New York: Pantheon Books, 1985.',
+      type: 'book' as const
+    },
+    {
+      id: 'jungk-1958',
+      citation: 'Jungk, Robert. Brighter Than a Thousand Suns: A Personal History of the Atomic Scientists. New York: Harcourt Brace, 1958.',
+      type: 'book' as const
+    },
+    {
+      id: 'mcenaney-2000',
+      citation: 'McEnaney, Laura. Civil Defense Begins at Home: Militarization Meets Everyday Life in the Fifties. Princeton: Princeton University Press, 2000.',
+      type: 'book' as const
+    },
+    {
+      id: 'nelkin-pollak-1981',
+      citation: 'Nelkin, Dorothy, and Michael Pollak. The Atom Besieged: Antinuclear Movements in France and Germany. Cambridge, MA: MIT Press, 1981.',
+      type: 'book' as const
+    }
+  ];
+
   const eras = [
     {
       period: "1877–1909",
