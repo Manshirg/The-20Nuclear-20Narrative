@@ -166,7 +166,7 @@ const PerceptionShifts = () => {
                 </div>
 
                 {/* Examples Grid */}
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ml-auto">
+                <div className="grid gap-8 grid-cols-2">
                   {section.examples.map((example, exampleIndex) => {
                     const ExampleIcon = example.icon;
                     
