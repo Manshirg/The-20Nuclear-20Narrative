@@ -148,7 +148,7 @@ const PerceptionShifts = () => {
             const SectionIcon = section.icon;
             
             return (
-              <section key={section.id} id={section.id}>
+              <section key={section.id} id={section.id} className="flex flex-col">
                 {/* Section Header */}
                 <div className="text-center mb-12">
                   <Badge variant="outline" className={`text-${section.color} border-${section.color} mb-4 text-lg px-4 py-2`}>
