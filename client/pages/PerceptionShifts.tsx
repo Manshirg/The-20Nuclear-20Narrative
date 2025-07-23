@@ -166,7 +166,7 @@ const PerceptionShifts = () => {
                 </div>
 
                 {/* Examples Grid */}
-                <div className="grid gap-8 grid-cols-2">
+                <div className="flex gap-8 justify-between">
                   {section.examples.map((example, exampleIndex) => {
                     const ExampleIcon = example.icon;
                     
