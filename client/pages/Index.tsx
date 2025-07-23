@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Atom, ArrowRight, Clock, Users, FileText, Zap } from 'lucide-react';
 import Footnote from '@/components/Footnote';
 import FootnotesSection from '@/components/FootnotesSection';
+import ReferencesSection from '@/components/ReferencesSection';
 
 const Index = () => {
   const footnotes = [
