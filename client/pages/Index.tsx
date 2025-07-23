@@ -7,6 +7,29 @@ import Footnote from '@/components/Footnote';
 import FootnotesSection from '@/components/FootnotesSection';
 
 const Index = () => {
+  const footnotes = [
+    {
+      number: 1,
+      citation: 'Spencer R. Weart, Nuclear Fear: A History of Images (Cambridge, MA: Harvard University Press, 1988), 45-67.'
+    },
+    {
+      number: 2,
+      citation: 'Paul Boyer, By the Bomb\'s Early Light: American Thought and Culture at the Dawn of the Atomic Age (New York: Pantheon Books, 1985), 123-145.'
+    },
+    {
+      number: 3,
+      citation: 'Robert Jungk, Brighter Than a Thousand Suns: A Personal History of the Atomic Scientists (New York: Harcourt Brace, 1958), 89-102.'
+    },
+    {
+      number: 4,
+      citation: 'Laura McEnaney, Civil Defense Begins at Home: Militarization Meets Everyday Life in the Fifties (Princeton: Princeton University Press, 2000), 78-94.'
+    },
+    {
+      number: 5,
+      citation: 'Dorothy Nelkin and Michael Pollak, The Atom Besieged: Antinuclear Movements in France and Germany (Cambridge, MA: MIT Press, 1981), 156-178.'
+    }
+  ];
+
   const eras = [
     {
       period: "1877–1909",
