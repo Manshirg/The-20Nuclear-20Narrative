@@ -254,18 +254,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footnotes Section */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <FootnotesSection footnotes={footnotes} />
-          <ReferencesSection
-            references={references}
-            title="References"
-            description="Academic sources cited on this page in Chicago style format"
-          />
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="py-12 px-4 bg-muted/30 border-t">
         <div className="container mx-auto text-center">
