@@ -123,7 +123,7 @@ const Index = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground leading-relaxed">
-                      {era.summary}
+                      {era.summary}<Footnote number={era.footnote} citation={footnotes[era.footnote - 1].citation} />
                     </p>
                   </CardContent>
                 </Card>
