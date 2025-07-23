@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { Button } from './ui/button';
-import { Popover, PopoverContent, PopoverTrigger } from './ui/popover';
+import { useState } from "react";
+import { Button } from "./ui/button";
+import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 
 interface FootnoteProps {
   number: number;
@@ -35,7 +35,9 @@ const Footnote = ({ number, citation, inline = false }: FootnoteProps) => {
       <PopoverContent className="w-80 text-sm" side="top">
         <div className="space-y-2">
           <div className="font-medium text-nuclear-blue">Footnote {number}</div>
-          <div className="text-muted-foreground leading-relaxed">{citation}</div>
+          <div className="text-muted-foreground leading-relaxed">
+            {citation}
+          </div>
         </div>
       </PopoverContent>
     </Popover>

@@ -1,10 +1,10 @@
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { BookOpen } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { BookOpen } from "lucide-react";
 
 interface Reference {
   id: string;
   citation: string;
-  type?: 'book' | 'article' | 'primary' | 'digital';
+  type?: "book" | "article" | "primary" | "digital";
 }
 
 interface ReferencesSectionProps {
@@ -13,20 +13,25 @@ interface ReferencesSectionProps {
   description?: string;
 }
 
-const ReferencesSection = ({ 
-  references, 
-  title = "References", 
-  description = "Sources cited on this page" 
+const ReferencesSection = ({
+  references,
+  title = "References",
+  description = "Sources cited on this page",
 }: ReferencesSectionProps) => {
   if (references.length === 0) return null;
 
   const getTypeLabel = (type?: string) => {
     switch (type) {
-      case 'book': return 'Book';
-      case 'article': return 'Journal Article';
-      case 'primary': return 'Primary Source';
-      case 'digital': return 'Digital Source';
-      default: return '';
+      case "book":
+        return "Book";
+      case "article":
+        return "Journal Article";
+      case "primary":
+        return "Primary Source";
+      case "digital":
+        return "Digital Source";
+      default:
+        return "";
     }
   };
 
@@ -45,7 +50,10 @@ const ReferencesSection = ({
         <CardContent>
           <div className="space-y-4">
             {references.map((reference, index) => (
-              <div key={reference.id} className="pb-3 border-b border-border last:border-b-0">
+              <div
+                key={reference.id}
+                className="pb-3 border-b border-border last:border-b-0"
+              >
                 <div className="flex items-start gap-3">
                   <div className="text-sm font-medium text-nuclear-blue min-w-[24px]">
                     {index + 1}.

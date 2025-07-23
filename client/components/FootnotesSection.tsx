@@ -8,7 +8,10 @@ interface FootnotesSectionProps {
   title?: string;
 }
 
-const FootnotesSection = ({ footnotes, title = "Footnotes" }: FootnotesSectionProps) => {
+const FootnotesSection = ({
+  footnotes,
+  title = "Footnotes",
+}: FootnotesSectionProps) => {
   if (footnotes.length === 0) return null;
 
   return (
@@ -22,9 +25,7 @@ const FootnotesSection = ({ footnotes, title = "Footnotes" }: FootnotesSectionPr
             <sup className="text-nuclear-blue font-medium mr-1">
               {footnote.number}
             </sup>
-            <span className="text-muted-foreground">
-              {footnote.citation}
-            </span>
+            <span className="text-muted-foreground">{footnote.citation}</span>
           </div>
         ))}
       </div>

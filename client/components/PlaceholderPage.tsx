@@ -1,6 +1,6 @@
-import { Button } from './ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { Construction } from 'lucide-react';
+import { Button } from "./ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Construction } from "lucide-react";
 
 interface PlaceholderPageProps {
   title: string;
@@ -20,7 +20,8 @@ const PlaceholderPage = ({ title, description }: PlaceholderPageProps) => {
         <CardContent className="space-y-4">
           <p className="text-muted-foreground">{description}</p>
           <p className="text-sm text-muted-foreground">
-            This page is coming soon. Continue prompting to have me fill in the content for this section.
+            This page is coming soon. Continue prompting to have me fill in the
+            content for this section.
           </p>
           <Button variant="outline" asChild>
             <a href="#" onClick={(e) => e.preventDefault()}>

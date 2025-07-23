@@ -1,47 +1,67 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import Footnote from '@/components/Footnote';
-import FootnotesSection from '@/components/FootnotesSection';
-import { Building2, Users, Scale, Megaphone, FileText, Shield, AlertTriangle, Atom, FlaskConical, Radiation } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import Footnote from "@/components/Footnote";
+import FootnotesSection from "@/components/FootnotesSection";
+import {
+  Building2,
+  Users,
+  Scale,
+  Megaphone,
+  FileText,
+  Shield,
+  AlertTriangle,
+  Atom,
+  FlaskConical,
+  Radiation,
+} from "lucide-react";
 
 const GovernmentVsPublic = () => {
   const footnotes = [
     {
       number: 1,
-      citation: 'U.S. Bureau of Mines, Annual Report on Radiological Safety in Mining Operations (Washington, DC: Government Printing Office, 1908).'
+      citation:
+        "U.S. Bureau of Mines, Annual Report on Radiological Safety in Mining Operations (Washington, DC: Government Printing Office, 1908).",
     },
     {
       number: 2,
-      citation: '"Scientific American" Editorial Board, Articles on Radiation and Public Health, 1898–1905.'
+      citation:
+        '"Scientific American" Editorial Board, Articles on Radiation and Public Health, 1898–1905.',
     },
     {
       number: 3,
-      citation: 'U.S. Department of Energy, Declassified Manhattan Project Memos, 1943–1946. National Archives.'
+      citation:
+        "U.S. Department of Energy, Declassified Manhattan Project Memos, 1943–1946. National Archives.",
     },
     {
       number: 4,
-      citation: 'President Dwight D. Eisenhower, "Atoms for Peace" Speech, United Nations General Assembly, December 8, 1953.'
+      citation:
+        'President Dwight D. Eisenhower, "Atoms for Peace" Speech, United Nations General Assembly, December 8, 1953.',
     },
     {
       number: 5,
-      citation: 'Paul Boyer, By the Bomb\'s Early Light: American Thought and Culture at the Dawn of the Atomic Age (Chapel Hill: University of North Carolina Press, 1994), 201-234.'
+      citation:
+        "Paul Boyer, By the Bomb's Early Light: American Thought and Culture at the Dawn of the Atomic Age (Chapel Hill: University of North Carolina Press, 1994), 201-234.",
     },
     {
       number: 6,
-      citation: 'U.S. Nuclear Regulatory Commission, Three Mile Island Hearings Transcripts (Washington, DC: NRC, 1979).'
+      citation:
+        "U.S. Nuclear Regulatory Commission, Three Mile Island Hearings Transcripts (Washington, DC: NRC, 1979).",
     },
     {
       number: 7,
-      citation: 'U.S. Senate Committee on Energy, Hearings on Yucca Mountain Nuclear Waste Storage (Washington, DC: Government Printing Office, 2005).'
+      citation:
+        "U.S. Senate Committee on Energy, Hearings on Yucca Mountain Nuclear Waste Storage (Washington, DC: Government Printing Office, 2005).",
     },
     {
       number: 8,
-      citation: 'Greenpeace, Anti-Nuclear Protest Archive, 1982. Greenpeace International Archives.'
+      citation:
+        "Greenpeace, Anti-Nuclear Protest Archive, 1982. Greenpeace International Archives.",
     },
     {
       number: 9,
-      citation: 'Bulletin of the Atomic Scientists, "The Nuclear Fear: Popular Culture and Public Opinion," Vol. 45, No. 3 (1989): 12-18.'
-    }
+      citation:
+        'Bulletin of the Atomic Scientists, "The Nuclear Fear: Popular Culture and Public Opinion," Vol. 45, No. 3 (1989): 12-18.',
+    },
   ];
 
   const periods = [
@@ -50,49 +70,55 @@ const GovernmentVsPublic = () => {
       title: "Early Control & Scientific Nationalism",
       government: {
         title: "Government Side: Federal Scientific Oversight",
-        content: "The federal government began asserting control over scientific research through agencies like the U.S. Bureau of Mines. This early oversight created the foundation for federal management of radiation, even before atomic weapons. Early bureaucratic structures established precedents for government authority over emerging nuclear technologies.",
+        content:
+          "The federal government began asserting control over scientific research through agencies like the U.S. Bureau of Mines. This early oversight created the foundation for federal management of radiation, even before atomic weapons. Early bureaucratic structures established precedents for government authority over emerging nuclear technologies.",
         icon: Building2,
-        footnote: 1
+        footnote: 1,
       },
       public: {
         title: "Public Reaction: Wonder and National Pride",
-        content: "The public largely viewed early radiological research as a wonder of American innovation. Articles in Scientific American portrayed radiation as modern magic, not something dangerous. Citizens embraced these discoveries as symbols of American scientific superiority and technological progress.",
+        content:
+          "The public largely viewed early radiological research as a wonder of American innovation. Articles in Scientific American portrayed radiation as modern magic, not something dangerous. Citizens embraced these discoveries as symbols of American scientific superiority and technological progress.",
         icon: FlaskConical,
-        footnote: 2
-      }
+        footnote: 2,
+      },
     },
     {
       era: "1910–1959",
       title: "Secrecy, Propaganda, and Post-War Anxiety",
       government: {
         title: "Government Side: Hidden Research and Reassurance Campaigns",
-        content: "The U.S. government concealed much of its nuclear research under wartime secrecy. The Manhattan Project was hidden from public view, while post-war campaigns like Atoms for Peace and civil defense training tried to manage nuclear fear with optimism. Official messaging emphasized control and beneficial applications while minimizing risks.",
+        content:
+          "The U.S. government concealed much of its nuclear research under wartime secrecy. The Manhattan Project was hidden from public view, while post-war campaigns like Atoms for Peace and civil defense training tried to manage nuclear fear with optimism. Official messaging emphasized control and beneficial applications while minimizing risks.",
         icon: Shield,
-        footnotes: [3, 4]
+        footnotes: [3, 4],
       },
       public: {
         title: "Public Reaction: Growing Doubt and Cultural Resistance",
-        content: "While some Americans accepted these messages, others were confused or fearful. Cultural responses — from dystopian films to critical journalism — began questioning whether nuclear science could be safely controlled. Public discourse increasingly reflected anxiety about government transparency and nuclear dangers.",
+        content:
+          "While some Americans accepted these messages, others were confused or fearful. Cultural responses — from dystopian films to critical journalism — began questioning whether nuclear science could be safely controlled. Public discourse increasingly reflected anxiety about government transparency and nuclear dangers.",
         icon: Users,
-        footnote: 5
-      }
+        footnote: 5,
+      },
     },
     {
       era: "1960–2016",
       title: "Dissent, Disaster, and Distrust",
       government: {
         title: "Government Side: Damage Control and Technical Authority",
-        content: "In the wake of nuclear accidents like Three Mile Island, the government attempted damage control via official hearings and technical statements. Yet public confidence continued to erode, especially around waste storage plans like Yucca Mountain. Official responses emphasized scientific expertise while struggling to restore public trust.",
+        content:
+          "In the wake of nuclear accidents like Three Mile Island, the government attempted damage control via official hearings and technical statements. Yet public confidence continued to erode, especially around waste storage plans like Yucca Mountain. Official responses emphasized scientific expertise while struggling to restore public trust.",
         icon: FileText,
-        footnotes: [6, 7]
+        footnotes: [6, 7],
       },
       public: {
         title: "Public Reaction: Organized Opposition and Democratic Demands",
-        content: "Protests surged nationwide. Organizations like Greenpeace questioned the government's transparency, and local communities rejected proposed nuclear waste sites. Grassroots activism helped redefine nuclear science as a democratic issue, not just a technical one. Citizens demanded accountability and meaningful participation in nuclear policy decisions.",
+        content:
+          "Protests surged nationwide. Organizations like Greenpeace questioned the government's transparency, and local communities rejected proposed nuclear waste sites. Grassroots activism helped redefine nuclear science as a democratic issue, not just a technical one. Citizens demanded accountability and meaningful participation in nuclear policy decisions.",
         icon: Megaphone,
-        footnotes: [8, 9]
-      }
-    }
+        footnotes: [8, 9],
+      },
+    },
   ];
 
   return (
@@ -102,9 +128,10 @@ const GovernmentVsPublic = () => {
         <div className="text-center mb-16">
           <Scale className="h-12 w-12 mx-auto mb-4 text-nuclear-blue" />
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-            🔷 Control vs Resistance: A Dual Exhibit on Nuclear Policy and Public Reaction
+            🔷 Control vs Resistance: A Dual Exhibit on Nuclear Policy and
+            Public Reaction
           </h1>
-          
+
           {/* Museum-style Introduction */}
           <Card className="max-w-4xl mx-auto border-l-4 border-l-nuclear-blue bg-card/50">
             <CardHeader>
@@ -114,8 +141,11 @@ const GovernmentVsPublic = () => {
             </CardHeader>
             <CardContent>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                "From the hopeful age of scientific discovery to the age of civil protest, the nuclear story in America was never one-sided. 
-                This exhibit contrasts the voices of official authority with the voices of public resistance, across three major periods of nuclear history."
+                "From the hopeful age of scientific discovery to the age of
+                civil protest, the nuclear story in America was never one-sided.
+                This exhibit contrasts the voices of official authority with the
+                voices of public resistance, across three major periods of
+                nuclear history."
               </p>
             </CardContent>
           </Card>
@@ -127,7 +157,10 @@ const GovernmentVsPublic = () => {
             <div key={period.era} className="space-y-8">
               {/* Period Header */}
               <div className="text-center">
-                <Badge variant="outline" className="text-nuclear-blue border-nuclear-blue mb-4 text-lg px-4 py-2">
+                <Badge
+                  variant="outline"
+                  className="text-nuclear-blue border-nuclear-blue mb-4 text-lg px-4 py-2"
+                >
                   {period.era}
                 </Badge>
                 <h2 className="text-3xl md:text-4xl font-serif font-semibold">
@@ -144,7 +177,10 @@ const GovernmentVsPublic = () => {
                       <div className="p-2 rounded-lg bg-red-500/10">
                         <period.government.icon className="h-6 w-6 text-red-600" />
                       </div>
-                      <Badge variant="secondary" className="bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300">
+                      <Badge
+                        variant="secondary"
+                        className="bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300"
+                      >
                         Government
                       </Badge>
                     </div>
@@ -158,17 +194,19 @@ const GovernmentVsPublic = () => {
                       {period.government.footnotes ? (
                         <>
                           {period.government.footnotes.map((footnoteNum, i) => (
-                            <Footnote 
-                              key={footnoteNum} 
-                              number={footnoteNum} 
-                              citation={footnotes[footnoteNum - 1].citation} 
+                            <Footnote
+                              key={footnoteNum}
+                              number={footnoteNum}
+                              citation={footnotes[footnoteNum - 1].citation}
                             />
                           ))}
                         </>
                       ) : (
-                        <Footnote 
-                          number={period.government.footnote} 
-                          citation={footnotes[period.government.footnote - 1].citation} 
+                        <Footnote
+                          number={period.government.footnote}
+                          citation={
+                            footnotes[period.government.footnote - 1].citation
+                          }
                         />
                       )}
                     </p>
@@ -182,7 +220,10 @@ const GovernmentVsPublic = () => {
                       <div className="p-2 rounded-lg bg-blue-500/10">
                         <period.public.icon className="h-6 w-6 text-blue-600" />
                       </div>
-                      <Badge variant="secondary" className="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300">
+                      <Badge
+                        variant="secondary"
+                        className="bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300"
+                      >
                         Public
                       </Badge>
                     </div>
@@ -196,17 +237,19 @@ const GovernmentVsPublic = () => {
                       {period.public.footnotes ? (
                         <>
                           {period.public.footnotes.map((footnoteNum, i) => (
-                            <Footnote 
-                              key={footnoteNum} 
-                              number={footnoteNum} 
-                              citation={footnotes[footnoteNum - 1].citation} 
+                            <Footnote
+                              key={footnoteNum}
+                              number={footnoteNum}
+                              citation={footnotes[footnoteNum - 1].citation}
                             />
                           ))}
                         </>
                       ) : (
-                        <Footnote 
-                          number={period.public.footnote} 
-                          citation={footnotes[period.public.footnote - 1].citation} 
+                        <Footnote
+                          number={period.public.footnote}
+                          citation={
+                            footnotes[period.public.footnote - 1].citation
+                          }
                         />
                       )}
                     </p>
@@ -240,7 +283,10 @@ const GovernmentVsPublic = () => {
           </CardHeader>
           <CardContent>
             <blockquote className="text-lg leading-relaxed italic text-foreground/90 border-l-4 border-nuclear-orange/30 pl-6">
-              "The nuclear future was never just written by scientists or politicians. It was shaped by mothers, students, journalists, and protesters — people whose voices helped redefine what 'safe' and 'progress' meant in the nuclear age."
+              "The nuclear future was never just written by scientists or
+              politicians. It was shaped by mothers, students, journalists, and
+              protesters — people whose voices helped redefine what 'safe' and
+              'progress' meant in the nuclear age."
             </blockquote>
             <div className="mt-6 grid md:grid-cols-3 gap-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
@@ -268,10 +314,14 @@ const GovernmentVsPublic = () => {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground leading-relaxed">
-              This dual exhibit reveals the fundamental tension between top-down technological control and bottom-up democratic resistance. 
-              Each era demonstrates how official narratives of progress and safety were continually challenged by lived experience, 
-              cultural expression, and organized activism. The evolution from scientific enthusiasm to widespread skepticism reflects 
-              broader changes in American attitudes toward authority, expertise, and technological risk.
+              This dual exhibit reveals the fundamental tension between top-down
+              technological control and bottom-up democratic resistance. Each
+              era demonstrates how official narratives of progress and safety
+              were continually challenged by lived experience, cultural
+              expression, and organized activism. The evolution from scientific
+              enthusiasm to widespread skepticism reflects broader changes in
+              American attitudes toward authority, expertise, and technological
+              risk.
             </p>
           </CardContent>
         </Card>
