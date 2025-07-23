@@ -10,7 +10,7 @@ const Navigation = () => {
     { path: '/timeline', label: 'Timeline' },
     { path: '/perception-shifts', label: 'Perception Shifts' },
     { path: '/government-vs-public', label: 'Government vs Public' },
-    { path: '/sources', label: 'Sources' },
+    { path: '/sources', label: 'References' },
   ];
 
   return (
