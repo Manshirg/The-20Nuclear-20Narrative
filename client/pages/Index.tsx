@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import { Atom, ArrowRight, Clock, Users, FileText, Zap } from 'lucide-react';
+import Footnote from '@/components/Footnote';
+import FootnotesSection from '@/components/FootnotesSection';
 
 const Index = () => {
   const eras = [
